@@ -80,7 +80,7 @@ export default {
             axios.post("http://85.187.158.121/~victormanuelca/organigrama",this.form)
             .then(data =>{
                 console.log(data);
-                this.makeToast("Hecho","Paciente creado","success");
+                this.makeToast("Hecho","Organigrama creado","success");
                 this.$router.push("/dashboard");
             }).catch( e =>{
                 console.log(e);

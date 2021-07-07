@@ -104,12 +104,10 @@ export default {
         .then( datos => {
             this.form.AREA = datos.data[0].AREA;
             this.form.DESCRIPCION = datos.data[0].DESCRIPCION;
-            this.form.dni = datos.data[0].DNI;
             this.form.AREA_DEPENDE = datos.data[0].AREA_DEPENDE;
             this.form.NIVEL = datos.data[0].NIVEL;
             this.form.TIPO_AREA = datos.data[0].TIPO_AREA;
             this.form.TITULAR = datos.data[0].TITULAR;
-            this.form.fechaNacimiento = datos.data[0].FechaNacimiento;
             this.form.token = localStorage.getItem("token");
             console.log(this.form);
         })
